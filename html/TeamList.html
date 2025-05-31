@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCK 참가팀 목록</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .logo_list {
+            background-color: white;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            margin: 40px auto;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align:center;
+        }
+
+        .team-radio{
+            display: none;
+        }
+        
+        .team-info {
+            display: none;
+            margin-top: 100px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .team-logo{
+            width: 60px;
+            height: 50px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #T1:checked ~ .info-container #T1-info,
+        #HLE:checked ~ .info-container #HLE-info,
+        #GENG:checked ~ .info-container #GENG-info,
+        #DK:checked ~ .info-container #DK-info,
+        #NS:checked ~ .info-container #NS-info,
+        #KT:checked ~ .info-container #KT-info,
+        #BNK:checked ~ .info-container #BNK-info,
+        #BRO:checked ~ .info-container #BRO-info,
+        #DRX:checked ~ .info-container #DRX-info,
+        #DNF:checked ~ .info-container #DNF-info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .team-info img {
+            flex-shrink: 0;
+            width: 200px;
+            height: 150px;
+            margin-left: 50px;
+        }
+
+        .team-info{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="index_container">
+        <img src="../image/LCK.png", alt="LCK_Logo", class="index_image" style="width: 75px;height: 60px;">
+        <h1 class="index_text">전설을 만들어 갑니다. We Make Legends, LCK.</h1>
+    </div>
+    
+    <ul>
+        <li><a href="https://moj0302.github.io/25webproject" style="color: white;">Main</a></li> <!-- 깃허브 링크로 바꾸기 -->
+        <li><a href="./History.html" style="color: white;">History</a></li>
+        <li><a href="./TeamList.html" style="color: white;">TeamList</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Seasons</a>
+            <div class="dropdown-content">
+                <a href="./LCK_Seasons.html">2O25년도 국내 대회(LCK)</a>
+                <a href="./International_Seasons.html">2025년도 국제 대회(FST, MSI, WORLDS)</a>
+            </div>
+        </li>
+        <li class="since">Since 2012~</li>
+    </ul>
+    <article  style="background-color: white; border: 2px solid black;" class="logo_list">
+        <h2>TEAM LIST</h2>
+
+        <input type="radio" name="team" id="T1" class="team-radio">
+        <label for="T1"><img src="../image/T1.png" alt="T1" class="team-logo"></label>
+
+        <input type="radio" name="team" id="HLE" class="team-radio">
+        <label for="HLE"><img src="../image/HLE.jpg" alt="HLE" class="team-logo"></label>
+
+        <input type="radio" name="team" id="GENG" class="team-radio">
+        <label for="GENG"><img src="../image/GENG.png" alt="GENG" class="team-logo"></label>
+
+        <input type="radio" name="team" id="DK" class="team-radio">
+        <label for="DK"><img src="../image/DK.png" alt="DK" class="team-logo"></label>
+
+        <input type="radio" name="team" id="NS" class="team-radio">
+        <label for="NS"><img src="../image/NS.png" alt="NS" class="team-logo"></label>
+
+        <input type="radio" name="team" id="KT" class="team-radio">
+        <label for="KT"><img src="../image/KT.jpg" alt="KT" class="team-logo"></label>
+
+        <input type="radio" name="team" id="BNK" class="team-radio">
+        <label for="BNK"><img src="../image/BNK.png" alt="BNK" class="team-logo"></label>
+
+        <input type="radio" name="team" id="BRO" class="team-radio">
+        <label for="BRO"><img src="../image/BRO.png" alt="BRO" class="team-logo"></label>
+
+        <input type="radio" name="team" id="DRX" class="team-radio">
+        <label for="DRX"><img src="../image/DRX.png" alt="DRX" class="team-logo"></label>
+
+        <input type="radio" name="team" id="DNF" class="team-radio">
+        <label for="DNF"><img src="../image/DNF.png" alt="DNF" class="team-logo"></label>
+        
+        <p>*팀 로고를 누르면 팀 정보가 보입니다.</p>
+
+        <!-- 주장인 경우 강조 처리 -->
+        <div class="info-container">
+            <div id="T1-info" class="team-info">
+                <img src="../image/T1.png">
+                <a href="https://www.youtube.com/@SKTT1" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>T1</h3>
+                <p>주장: FAKER</p>
+                <p>팀원<br>DORAN(TOP)<br>ONER(JUNGLE)<br><strong>FAKER(MID)</strong><br>GUMAYUSI(BOT)<br>KERIA(SUP)</p>
+                <p>Since 2012</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="HLE-info" class="team-info">
+                <img src="../image/HLE.jpg">
+                <a href="https://www.youtube.com/@HanwhaLifeEsports" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>HLE</h3>
+                <p>주장: PEANUT</p>
+                <p>팀원<br>ZEUS(TOP)<br><strong>PEANUT(JUNGLE)</strong><br>ZEKA(MID)<br>VIPER(BOT)<br>DELIGHT(SUP)</p>
+                <p>Since 2014</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="GENG-info" class="team-info">
+                <img src="../image/GENG.png">
+                <a href="https://www.youtube.com/@gengesports" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>Gen.G</h3>
+                <p>주장: RULER</p>
+                <p>팀원<br>KIIN(TOP)<br>CANYON(JUNGLE)<br>CHOVY(MID)<br><strong>RULER(BOT)</strong><br>DURO(SUP)</p>
+                <p>Since 2013</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="DK-info" class="team-info">
+                <img src="../image/DK.png">
+                <a href="https://www.youtube.com/@DplusKIA_LOL" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>DK</h3>
+                <p>주장: SHOWMAKER</p>
+                <p>팀원<br>SIWOO(TOP)<br>LUCID(JUNGLE)<br><strong>SHOWMAKER(MID)</strong><br>AIMING(BOT)<br>BERYL(SUP)</p>
+                <p>Since 2017</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="NS-info" class="team-info">
+                <img src="../image/NS.png">
+                <a href="https://www.youtube.com/@NSRedForce" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>NS</h3>
+                <p>주장: LEHENDS</p>
+                <p>팀원<br>KINGEN(TOP)<br>GIDEON(JUNGLE)<br>CALIX(MID)<br>JIWOO(BOT)<br><strong>LEHENDS(SUP)</strong></p>
+                <p>Since 2016</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="KT-info" class="team-info">
+                <img src="../image/KT.jpg">
+                <a href="https://www.youtube.com/@ktRolster_VOD" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>KT</h3>
+                <p>주장: BDD</p>
+                <p>팀원<br>PERFECT(TOP)<br>CUZZ(JUNGLE)<br><strong>BDD(MID)</strong><br>DEOKDAM(BOT)<br>PETER(SUP)</p>
+                <p>Since 2012</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="BNK-info" class="team-info">
+                <img src="../image/BNK.png"> <!--현재 BNK 공식 유튜브 채널로 들어가는데 오류가 발생하여 검색 결과로 대체합니다.-->
+                <a href="https://www.youtube.com/results?search_query=BNK+fearx" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>BNK</h3>
+                <p>주장: X(미정)</p>
+                <p>팀원<br>SOBORO(TOP)<br>RAPTOR(JUNGLE)<br>DAYSTAR(MID)<br>DIABLE(BOT)<br>KELLIN(SUP)</p>
+                <p>Since 2016</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="BRO-info" class="team-info">
+                <img src="../image/BRO.png">
+                <a href="https://www.youtube.com/@BRIONESPORTS" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>BRO</h3>
+                <p>주장: MORGAN</p>
+                <p>팀원<br><strong>MORGAN(TOP)</strong><br>CROCO, HAMBAK(JUNGLE)<br>CLOZER(MID)<br>HYPE, BULL(BOT)<br>POLLU(SUP)</p>
+                <p>Since 2012</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="DRX-info" class="team-info">
+                <img src="../image/DRX.png">
+                <a href="https://www.youtube.com/@DRXGlobal" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>DRX</h3>
+                <p>주장: X(미정)</p>
+                <p>팀원<br>RICH(TOP)<br>SPONGE(JUNGLE)<br>KYEAHOO(MID)<br>LAZYFEEL(BOT)<br>ANDIL(SUP)</p>
+                <p>Since 2012</p>
+            </div>
+        </div>
+
+           <div class="info-container">
+            <div id="DNF-info" class="team-info">
+                <img src="../image/DNF.png">
+                <a href="https://www.youtube.com/@DN_Freecs" target="_blank" style="display: inline-block; margin-right: 10px;">
+                    <img src="../image/youtube.png" style="width: 50px; height: 50px;">
+                </a>
+                <h3>DNF</h3>
+                <p>주장: PYOSIK</p>
+                <p>팀원<br>DUDU(TOP)<br><strong>PYOSIK(JUNGLE)</strong><br>BULLDOG(MID)<br>BURSERKER(BOT)<br>LIFE(SUP)</p>
+                <p>Since 2014</p>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
